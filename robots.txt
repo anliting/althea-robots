@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /api
+Disallow: /settings
+Disallow: /edituser
+Disallow: /home/
+Disallow: /login
+Disallow: /newpage
+Disallow: /user
