@@ -1,8 +1,13 @@
 import fs from'fs'
-export default althea=>{
+function Plugin(althea){
     althea.addPagemodule('/robots.txt',e=>{
         fs.createReadStream('plugins/robots/robots.txt').pipe(
             e.response
         )
     })
 }
+Plugin.prototype.end=function(){
+}
+Plugin.prototype.shutdownEnd=function(){
+}
+export default Plugin
